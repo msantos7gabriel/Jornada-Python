@@ -6,11 +6,14 @@
     "dropna",
     "duracao",
     "enconder",
+    "flet",
     "Florest",
+    "Hashzap",
     "isna",
     "ligacoes",
     "plotly",
     "preco",
-    "profissao"
+    "profissao",
+    "tunel"
   ]
 }

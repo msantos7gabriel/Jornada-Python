@@ -64,3 +64,5 @@ def main(pagina):
 
 # Inicializa o aplicativo
 ft.app(target=main, view=ft.AppView.WEB_BROWSER)
+
+#  Flet Deploy

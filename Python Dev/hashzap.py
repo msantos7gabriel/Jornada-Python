@@ -1,6 +1,5 @@
 import flet as ft
 
-
 def main(pagina):
 
     # Função que recebe mensagens através do túnel pubsub
@@ -10,11 +9,11 @@ def main(pagina):
         pagina.update()
 
     # Inscreve a função enviar_mensagem_tunel para receber mensagens
-    pagina.pubsub.subscribe([enviar_mensagem_tunel])
+    pagina.pubsub.subscribe(enviar_mensagem_tunel)
 
     # Função para abrir o popup e exibir a tela de entrada
     def abrir_popup(event):
-        pagina.dialog = popup
+        pagina.overlay.append(popup)
         popup.open = True
         pagina.update()
         print('Clicou no Botão')
@@ -64,5 +63,3 @@ def main(pagina):
 
 # Inicializa o aplicativo
 ft.app(target=main, view=ft.AppView.WEB_BROWSER)
-
-#  Flet Deploy
